@@ -1,0 +1,1 @@
+var maxNum = 100
