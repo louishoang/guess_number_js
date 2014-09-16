@@ -12,9 +12,9 @@ $(document).ready(function() {
 
   $("#guess").on("submit", function(event){
     event.preventDefault();
-    userNum = +$("#user-input").val();
+    var userNum = +$("#user-input").val();
 
-    if(isNaN(userNum)){
+    if(isNaN(userNum) || userNum > 100 || userNum < 0){
       alert("Please choose a number between 0 and " + maxNum);
     }else {
 
