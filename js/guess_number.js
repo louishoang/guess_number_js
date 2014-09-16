@@ -1,1 +1,3 @@
-var maxNum = 100
+$( document ).ready(function() {
+    console.log( "ready!" );
+});

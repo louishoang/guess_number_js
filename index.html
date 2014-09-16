@@ -19,11 +19,23 @@
   </nav>
 
   <div class="row">
-    <h2> Please choose your number </h2>
+    <span id="hidden_num"></span>
+    <h2> Please choose your number between 0 and <span id="max_num">100</span></h2>
+    <form id="guess">
+      <input type="text" id="user-input" placeholder="Pick a number"/>
+      <input type="submit" value="Submit"/>
+      <input type="reset" value="Restart"/>
+    </form>
+    <div class="guesses hidden right">Here are your guesses: </div>
+    <div id="answer_box">
+      <hr>
+      Please choose a number
+    </div>
+
   </div>
 
 
   <script src="js/libs/jquery-1.10.2.js"></script>
-  <script src="js/guess_number.js"></script>
+  <script src="guess_number.js"></script>
 </body>
 </html>
