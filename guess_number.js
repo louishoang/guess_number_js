@@ -23,7 +23,10 @@ $(document).ready(function() {
         answer_box.html(userNum + " is too high, try again");
       }else if (userNum === hiddenNum){
         answer_box.html("You won in " + count + " guesses.");
+        $(this).find("#user-input").prop("disabled", true);
       }
+
+      $(this).find("#user-input").val("")
     }
   });
     $("#guess").on("reset", function(event){
